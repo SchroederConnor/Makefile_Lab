@@ -7,7 +7,7 @@ REQUIRED_FILES = [
     "main.cpp",
     "calculator.cpp",
     "calculator.h",
-    "Makefile"
+    "makefile"
 ]
 
 EXECUTABLE_NAMES = ["result"]
@@ -22,9 +22,10 @@ def print_result(test_name, passed):
 # Check required files
 # ---------------------------
 def check_files():
+    existing_files = {f.lower() for f in os.listdir(".")}
     missing = []
     for file in REQUIRED_FILES:
-        if not os.path.exists(file):
+        if file.lower() not in existing_files:
             missing.append(file)
 
     if missing:
