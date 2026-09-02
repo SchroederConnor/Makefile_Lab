@@ -2,7 +2,7 @@
 using namespace std;
 #include "calculator.h"
 
-int main()
+double main()
 {
     double value1, value2, result;
     string name;
@@ -19,7 +19,7 @@ int main()
     cout << name << value1 <<" * " << value2 << " = " << result << endl;
 
     result = divide(value1, value2);
-    cout << name << value1 << " / " << value2 << " = " result << endl;
+    cout << name << value1 << " / " << value2 << " = " << result << endl;
 
-    return 0;
+    return 0.0;
 }
