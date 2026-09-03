@@ -2,7 +2,7 @@
 using namespace std;
 #include "calculator.h"
 
-double main()
+int main()
 {
     double value1, value2, result;
     string name;
@@ -21,5 +21,5 @@ double main()
     result = divide(value1, value2);
     cout << name << value1 << " / " << value2 << " = " << result << endl;
 
-    return 0.0;
+    return 0;
 }
