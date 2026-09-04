@@ -1,3 +1,5 @@
+//Connor Schroeder
+
 #include <iostream>
 using namespace std;
 #include "calculator.h"
